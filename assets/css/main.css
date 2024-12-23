@@ -12,13 +12,14 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +30,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-color: #a8a9b4; /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -206,9 +207,8 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
+  .header ~ main,
+  .header ~ #footer {
     margin-left: 300px;
   }
 }
@@ -356,7 +356,7 @@ h6 {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
-.navmenu .dropdown>.dropdown-active {
+.navmenu .dropdown > .dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
@@ -486,11 +486,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -544,9 +544,9 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   position: relative;
-  padding: 80px 0;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -729,6 +729,14 @@ section,
   margin-bottom: 20px;
 }
 
+.resume .resume-subtitle {
+  color: var(--heading-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -759,6 +767,16 @@ section,
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+}
+
+.resume .resume-item .courses li {
+  margin-left: 40px;
+  margin-bottom: -10px;
+}
+
+.resume .resume-item .course-content {
+  padding-left: 20px;
+  text-align: justify;
 }
 
 .resume .resume-item:last-child {
@@ -1104,8 +1122,8 @@ section,
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1116,19 +1134,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1137,7 +1155,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
@@ -1183,7 +1201,7 @@ section,
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
