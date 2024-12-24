@@ -718,6 +718,50 @@ section,
   background-color: var(--accent-color);
 }
 
+/* Genel kapsayıcı */
+.skills-container {
+  display: grid; /* Grid düzeni */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Esnek kolonlar */
+  gap: 20px; /* Kategoriler arası boşluk */
+  padding: 20px;
+}
+
+/* Kategori başlıkları */
+.skills-category h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Liste düzeni */
+.skills-list {
+  list-style: none; /* Madde işaretlerini kaldır */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.skills-list li {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills-list li i {
+  font-size: 20px; /* İkon boyutu */
+  margin-right: 10px; /* İkon ile metin arası boşluk */
+  color: #007bff; /* İkon rengi */
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -776,6 +820,7 @@ section,
 
 .resume .resume-item .course-content {
   padding-left: 20px;
+  padding-right: 25px;
   text-align: justify;
 }
 
@@ -845,6 +890,10 @@ section,
 
 .portfolio .portfolio-content img {
   transition: 0.3s;
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -1163,7 +1212,7 @@ section,
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 50%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
