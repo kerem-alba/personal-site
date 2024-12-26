@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "hotelrez",
+    "description": "This application allows users to easily search for hotels, make reservations, and view facility rules. It was developed as a graduation project for the Siliconmade Academy Mobile Frontend training program.",
+    "features": [
+      "Search for hotels and view detailed information.",
+      "Hotel search based on dates, number of people, and number of rooms.",
+      "View hotel details.",
+      "Personalized favorite hotels and reservation management pages for the user.",
+      "User-friendly and stylish design."
+    ],
+    "screens": [
+      "assets/screenshots/hotel-rez/1.jpg",
+      "assets/screenshots/hotel-rez/2.jpg",
+      "assets/screenshots/hotel-rez/3.jpg",
+      "assets/screenshots/hotel-rez/4.jpg",
+      "assets/screenshots/hotel-rez/5.jpg",
+      "assets/screenshots/hotel-rez/6.jpg",
+      "assets/screenshots/hotel-rez/7.jpg",
+      "assets/screenshots/hotel-rez/8.jpg",
+      "assets/screenshots/hotel-rez/9.jpg",
+      "assets/screenshots/hotel-rez/10.jpg",
+      "assets/screenshots/hotel-rez/11.jpg",
+      "assets/screenshots/hotel-rez/12.jpg",
+      "assets/screenshots/hotel-rez/13.jpg",
+      "assets/screenshots/hotel-rez/14.jpg",
+      "assets/screenshots/hotel-rez/15.jpg",
+      "assets/screenshots/hotel-rez/16.jpg",
+      "assets/screenshots/hotel-rez/17.jpg",
+      "assets/screenshots/hotel-rez/18.jpg",
+      "assets/screenshots/hotel-rez/19.jpg",
+      "assets/screenshots/hotel-rez/20.jpg",
+      "assets/screenshots/hotel-rez/21.jpg",
+      "assets/screenshots/hotel-rez/22.jpg",
+      "assets/screenshots/hotel-rez/23.jpg",
+      "assets/screenshots/hotel-rez/1.jpg"
+    ],
+    "screenTexts": [
+      "The application's home screen is the Hotels screen, which greets the user when the application is launched.",
+      "On the homepage, there is a search box along with cards for recommended hotels and city cards. Users can search for hotels based on city, date, and number of guests.",
+      "When clicked on any input area on Search Box, a modal is activated.",
+      "The 'Your Destination' input field activates a modal where autocomplete is enabled. As text is entered, hotels and cities starting with the entered letters are filtered.",
+      "When the check-in and check-out dates are clicked, a modal for date selection opens, allowing both dates to be selected via DateTimePicker.",
+      "This modal allows users to select rooms, guests, and enable the pet-friendly option. Selections are confirmed by clicking the Apply button.",
+      "Another modal allows selecting the number of rooms and guests. The chosen details are added to the search criteria by clicking the Apply button.",
+      "Each time the number of rooms increases, a new field is added to select the number of guests for each room.",
+      "This screen shows the list of hotels matching the selected city and date range, displaying each hotel’s name, price, rating, and image. Users can add hotels to favorites using the heart icon.",
+      "Clicking on the header opens a modal similar to the search bar on the homepage, where search criteria can be adjusted.",
+      "This screen displays detailed information about the selected hotel. Users can view the hotel’s name, rating, price, and images. The hotel’s facilities, rules, and location are also displayed.",
+      "After reviewing all the information, users can proceed to room selection.",
+      "This screen shows the rooms in the selected hotel, including photos, maximum occupancy, and total price.",
+      "Users can start the reservation process by clicking the 'Make Reservation' button. Each room is displayed as a detailed card.",
+      "This screen allows users to view the reservation summary for the selected room. The total price of the reservation, hotel rules, and other details are displayed.",
+      "Upon clicking the Reserve button, the reservation is added to the user's reservations and stored in the database.",
+      "This screen allows users to view the hotels they have added to their favorites. If the user is not logged in, they are prompted to log in.",
+      " If the user is logged in, the list of favorite hotels is shown with details.",
+      "On this screen, users can view the hotel reservations they have made. However if the user is not logged in, a message prompting them to log in is displayed.",
+      "Reservations are listed with hotel name, price, and location information. Users can easily access hotel details.",
+      "Login Screen: Allows users to log in using their email address and password. There is also an option to log in with Google.",
+      "Register Screen: Enables new users to register in the system by providing email, password, and password confirmation fields.",
+      "Upon login, users can access profile settings, notification preferences, payment methods, and other customization options. However, these features are not yet activated.",
+      "Upon login, the application automatically redirects the user to the home screen."
+    ],
+    "technologies": {
+      "frontend": "React Native (Expo)",
+      "stateManagement": "Zustand",
+      "backend": "Firebase (Authentication and Firestore)",
+      "navigation": "React Navigation"
+    }
+  }
+]

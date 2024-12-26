@@ -28,14 +28,6 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body class="index-page">
@@ -132,11 +124,11 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 justify-content-center">
-            <div class="col-lg-4">
-              <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="" />
+            <div class="col-lg-3 col-md-6 about-img-container">
+              <img src="assets/img/my-profile-img.jpg" class="img-fluid about-img" alt="" />
             </div>
             <div class="col-lg-8 content">
-              <h2>UI/UX Designer &amp; Web Developer.</h2>
+              <h2>Personal Info</h2>
               <p class="fst-italic py-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -156,60 +148,11 @@
                   </ul>
                 </div>
               </div>
-              <p class="py-3">
-                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-                incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus
-                itaque neque.
-              </p>
             </div>
           </div>
         </div>
       </section>
       <!-- /About Section -->
-
-      <!-- Stats Section -->
-      <section id="stats" class="stats section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-emoji-smile"></i>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-journal-richtext"></i>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-headset"></i>
-                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-people"></i>
-                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Stats Section -->
 
       <!-- Resume Section -->
       <section id="resume" class="resume section light-background">
@@ -343,69 +286,112 @@
       <section id="skills" class="skills section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Skills</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <div class="row skills-content">
-              <h3 class="skills-title">Technical Skills</h3>
-              <div class="skills-container">
-                <div class="skills-category">
-                  <h4>Languages</h4>
-                  <ul class="skills-list">
-                    <li><img class="icon" src="assets/icon/html5.png" alt="HTML5 Icon" /> HTML5</li>
-                    <li><img class="icon" src="assets/icon/css3.png" alt="CSS3 Icon" /> CSS3</li>
-                    <li><img class="icon" src="assets/icon/c-sharp.png" alt="C#" /> C#</li>
-                    <li><img class="icon" src="assets/icon/js.png" alt="JavaScript" /> JavaScript</li>
-                    <li><img class="icon" src="assets/icon/typescript.png" alt="TypeScript" /> TypeScript</li>
-                    <li><img class="icon" src="assets/icon/matlab.png" alt="Matlab" /> Matlab</li>
-                  </ul>
+          <h2>Technical Skills</h2>
+          <div class="skills-wrapper">
+            <!-- Left Column -->
+            <div class="skills-column">
+              <!-- Languages -->
+              <div class="skills-category">
+                <h4>Languages</h4>
+                <div class="skills-icons">
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/html5.png" alt="HTML5 Icon" />
+                    <p>HTML5</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/css3.png" alt="CSS3 Icon" />
+                    <p>CSS3</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/c-sharp.png" alt="C# Icon" />
+                    <p>C#</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/js.png" alt="JavaScript Icon" />
+                    <p>JavaScript</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/typescript.png" alt="TypeScript Icon" />
+                    <p>TypeScript</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/matlab.png" alt="Matlab Icon" />
+                    <p>Matlab</p>
+                  </div>
                 </div>
+              </div>
 
-                <div class="skills-category">
-                  <h4>Frontend Development</h4>
-                  <ul class="skills-list">
-                    <li><img class="icon" src="assets/icon/react.png" alt="React" /> React</li>
-                    <li><img class="icon" src="assets/icon/reactnative.png" alt="ReactNative" /> React Native</li>
-
-                    <li><img class="icon" src="assets/icon/angular.png" alt="Angular" /> Angular</li>
-                    <li><img class="icon" src="assets/icon/bootstrap.png" alt="Bootstrap" /> Bootstrap</li>
-                    <li><img class="icon" src="assets/icon/tailwind.png" alt="Tailwind" /> Tailwind</li>
-                  </ul>
+              <!-- Frontend Development -->
+              <div class="skills-category">
+                <h4>Frontend Development</h4>
+                <div class="skills-icons">
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/react.png" alt="React Icon" />
+                    <p>React</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/reactnative.png" alt="React Native Icon" />
+                    <p>React Native</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/angular.png" alt="Angular Icon" />
+                    <p>Angular</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/bootstrap.png" alt="Bootstrap Icon" />
+                    <p>Bootstrap</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/tailwind.png" alt="Tailwind Icon" />
+                    <p>Tailwind</p>
+                  </div>
                 </div>
-
-                <div class="skills-category">
-                  <h4>Backend Development</h4>
-                  <ul class="skills-list">
-                    <li><img class="icon" src="assets/icon/nodejs.png" alt="Node.js" /> Node.js</li>
-                    <li><img class="icon" src="assets/icon/netcore.png" alt="Asp.Net" /> .Net</li>
-                    <li><img class="icon" src="assets/icon/firebase.png" alt="Firebase" /> Firebase</li>
-                  </ul>
+              </div>
+            </div>
+            <!-- Right Column -->
+            <div class="skills-column">
+              <!-- Database -->
+              <div class="skills-category">
+                <h4>Database</h4>
+                <div class="skills-icons">
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/mssql.png" alt="Ms SQL Icon" />
+                    <p>Ms SQL</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/firestore.png" alt="Firestore Icon" />
+                    <p>Firestore</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/azuresql.png" alt="Azure SQL Icon" />
+                    <p>Azure SQL</p>
+                  </div>
                 </div>
+              </div>
 
-                <div class="skills-category">
-                  <h4>Database</h4>
-                  <ul class="skills-list">
-                    <li><img class="icon" src="assets/icon/mssql.png" alt="Ms SQL" /> Ms SQL</li>
-                    <li><img class="icon" src="assets/icon/firestore.png" alt="Firestore" /> Firestore</li>
-                    <li><img class="icon" src="assets/icon/azuresql.png" alt="AzureSQL" /> Azure SQL</li>
-                  </ul>
-                </div>
-
-                <div class="skills-category">
-                  <h4>Version Control</h4>
-                  <ul class="skills-list">
-                    <li><img class="icon" src="assets/icon/github.png" alt="Github" /> Github</li>
-                  </ul>
+              <!-- Backend Development -->
+              <div class="skills-category">
+                <h4>Backend Development</h4>
+                <div class="skills-icons">
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/nodejs.png" alt="Node.js Icon" />
+                    <p>Node.js</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/netcore.png" alt="Asp.Net Icon" />
+                    <p>.Net</p>
+                  </div>
+                  <div class="skill-item">
+                    <img class="icon" src="assets/icon/firebase.png" alt="Firebase Icon" />
+                    <p>Firebase</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- /Skills Section -->
 
       <!-- Portfolio Section -->
@@ -441,7 +427,7 @@
                     <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"
                       ><i class="bi bi-zoom-in"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="portfolio-details.html?id=1" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -717,134 +703,6 @@
         </div>
       </section>
       <!-- /Services Section -->
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="testimonials section light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-        <!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 40
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 1
-                  }
-                }
-              }
-            </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span
-                      >Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-                      aliquam eget nibh et. Maecen aliquam, risus at semper.</span
-                    >
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span
-                      >Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt
-                      aliqua noster fugiat irure amet legam anim culpa.</span
-                    >
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span
-                      >Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis
-                      noster aute amet eram fore quis sint minim.</span
-                    >
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span
-                      >Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna
-                      sunt elit fore quem dolore labore illum veniam.</span
-                    >
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span
-                      >Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat
-                      legam esse veniam culpa fore nisi cillum quid.</span
-                    >
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- /Testimonials Section -->
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">

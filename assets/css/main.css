@@ -504,7 +504,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: clip;
 }
 
@@ -648,123 +648,100 @@ section,
   line-height: 0;
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 30px;
-  width: 100%;
+.about-img-container {
+  margin-right: 40px;
 }
 
-.stats .stats-item i {
-  color: var(--accent-color);
-  display: block;
-  font-size: 44px;
-  float: left;
-  line-height: 0;
-}
-
-.stats .stats-item .purecounter {
-  color: var(--heading-color);
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  margin-left: 60px;
-}
-
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: var(--heading-font);
-  font-size: 14px;
+.about-img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills {
+  margin-bottom: -80px;
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
+.skills-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills-column {
+  flex: 1;
+  min-width: 200px;
 }
 
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
+.skills-category {
+  margin-bottom: 20px;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
-}
-
-/* Genel kapsayıcı */
-.skills-container {
-  display: grid; /* Grid düzeni */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Esnek kolonlar */
-  gap: 20px; /* Kategoriler arası boşluk */
-  padding: 20px;
-}
-
-/* Kategori başlıkları */
 .skills-category h4 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
-/* Liste düzeni */
-.skills-list {
-  list-style: none; /* Madde işaretlerini kaldır */
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.skills-list li {
+.skills-icons {
   display: flex;
-  margin-bottom: 10px;
-  font-size: 16px;
-  justify-content: flex-start;
-  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  cursor: grab;
 }
 
-.skills-list li i {
-  font-size: 20px; /* İkon boyutu */
-  margin-right: 10px; /* İkon ile metin arası boşluk */
-  color: #007bff; /* İkon rengi */
+.skills-icons:active {
+  cursor: grabbing;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+.skill-item {
+  text-align: center;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  .skills-column:first-child {
+    flex: 3; /* Sol kolon */
+  }
+
+  .skills-column:last-child {
+    flex: 2; /* Sağ kolon */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+  }
+
+  .skills-column {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+.resume {
+  margin-bottom: -20px;
+}
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
@@ -902,7 +879,7 @@ section,
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   padding: 15px;
 }
 
@@ -1212,7 +1189,7 @@ section,
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1232,8 +1209,8 @@ section,
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1255,7 +1232,9 @@ section,
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1339,4 +1318,56 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+#project-info {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#project-description {
+  text-align: justify;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.swiper-slide p {
+  text-align: justify;
+  margin-top: 20px;
+  line-height: 1.5;
+  max-width: 100%;
+  overflow-y: auto;
+  height: calc(30px + 6em);
+}
+
+.portfolio-technologies {
+  margin-top: 30px;
+  padding: 20px;
+
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+}
+.portfolio-technologies table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.portfolio-technologies table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.portfolio-technologies table td:first-child {
+  font-weight: bold;
 }

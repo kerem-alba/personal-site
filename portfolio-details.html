@@ -49,33 +49,32 @@
       <a href="index.html" class="logo d-flex align-items-center justify-content-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Alex Smith</h1>
+        <h1 class="sitename">Kerem Albayrak</h1>
       </a>
 
       <div class="social-links text-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/kerem-albayrak-me/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.github.com/kerem-alba" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/keremasdfghjk/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:c.kerem.albayrak@gmail.com" class="gmail"><i class="bi bi-google"></i></a>
       </div>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a href="#hero"><i class="bi bi-house navicon"></i>Home</a>
+            <a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a>
           </li>
           <li>
-            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+            <a href="index.html#about"><i class="bi bi-person navicon"></i> About</a>
           </li>
           <li>
-            <a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a>
+            <a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a>
           </li>
           <li>
-            <a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a>
+            <a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a>
           </li>
           <li>
-            <a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a>
+            <a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a>
           </li>
           <li class="dropdown">
             <a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -129,9 +128,11 @@
                     "loop": true,
                     "speed": 600,
                     "autoplay": {
-                      "delay": 5000
+                      "delay": 3000
                     },
-                    "slidesPerView": "auto",
+                    "slidesPerView": "2",
+                    "slidesPerGroup": 2,
+                    "spaceBetween": 20,
                     "pagination": {
                       "el": ".swiper-pagination",
                       "type": "bullets",
@@ -139,45 +140,26 @@
                     }
                   }
                 </script>
-
-                <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/app-1.jpg" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/product-1.jpg" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/branding-1.jpg" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/books-1.jpg" alt="" />
-                  </div>
-                </div>
+                <div class="swiper-wrapper align-items-center" id="gallery"></div>
                 <div class="swiper-pagination"></div>
               </div>
             </div>
 
             <div class="col-lg-4">
               <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                <h3>Project information</h3>
-                <ul>
-                  <li><strong>Category</strong>: Web design</li>
-                  <li><strong>Client</strong>: ASU Company</li>
-                  <li><strong>Project date</strong>: 01 March, 2020</li>
-                  <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <h3 id="project-title"></h3>
+                <ul id="project-info">
+                  <!-- Dinamik liste öğeleri buraya eklenecek -->
                 </ul>
               </div>
               <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-                <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae
-                  officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur
-                  dignissimos. Sequi nulla at esse enim cum deserunt eius.
-                </p>
+                <p id="project-description"></p>
+              </div>
+              <div class="portfolio-technologies" data-aos="fade-up" data-aos-delay="400">
+                <h4>Technologies</h4>
+                <table id="project-technologies" style="width: 100%; border-collapse: collapse">
+                  <!-- Dinamik satırlar buraya eklenecek -->
+                </table>
               </div>
             </div>
           </div>
@@ -221,5 +203,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio-details.js"></script>
   </body>
 </html>
