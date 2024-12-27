@@ -626,6 +626,10 @@ section,
   font-size: 24px;
 }
 
+.about .container p {
+  text-align: justify;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -649,12 +653,15 @@ section,
 }
 
 .about-img-container {
-  margin-right: 40px;
 }
 
 .about-img {
-  max-width: 100%;
   height: auto;
+  width: 100%;
+}
+
+.personal-info {
+  margin-bottom: 30px;
 }
 
 /*--------------------------------------------------------------
