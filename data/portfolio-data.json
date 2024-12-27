@@ -68,5 +68,200 @@
       "backend": "Firebase (Authentication and Firestore)",
       "navigation": "React Navigation"
     }
+  },
+  {
+    "id": 2,
+    "title": "KonserX",
+    "description": "KonserX is a React Native application that allows users to explore concerts in Turkey, follow their favorite artists' concerts, and find new events based on their interests. The app is still in development, and new features will be added in future releases.",
+    "features": [
+      "Spotify Login: Log in with your Spotify account and get recommendations based on your favorite artists.",
+      "Personalized Recommendations: Get recommendations based on your Spotify music data and preferences.",
+      "Popular and Upcoming Concerts: A list of popular artists and upcoming concerts.",
+      "Filtering: Search and filter concerts by city, genre, and date.",
+      "User Location Information: Get recommendations based on your location.",
+      "Multi Authentication: Log in using either email or Spotify.",
+      "Navigation: User-friendly bottom tab and stack navigation.",
+      "Favorite Genre Selection: A screen to select favorite music genres for users who don't log in with Spotify."
+    ],
+    "screens": [
+      "assets/screenshots/konserx/login.jpg",
+      "assets/screenshots/konserx/home1.jpg",
+      "assets/screenshots/konserx/home2.jpg",
+      "assets/screenshots/konserx/explore1.jpg",
+      "assets/screenshots/konserx/explore2.jpg",
+      "assets/screenshots/konserx/explore3.jpg",
+      "assets/screenshots/konserx/details.jpg"
+    ],
+    "screenTexts": [
+      "Login screen where users can authenticate via Spotify or email. Spotify login automatically fetches the user's name and email.",
+      "Home screen displaying personalized concert recommendations based on the user's Spotify data, including popular and upcoming concerts.",
+      "The Home screen continues with additional concert categories, offering users the ability to explore new events based on their preferences.",
+      "Explore page where users can filter concerts by city, genre, and date, dynamically fetching results from the backend.",
+      "Detailed filter options for refining concert searches, including city and genre preferences, allowing for a more tailored experience.",
+      "Concert list filtered based on user input, showing event details such as artist, location, and date.",
+      "Concert detail page displaying full event information, including ticket purchase options and artist details."
+    ],
+    "technologies": {
+      "Frontend": "React Native (Expo)",
+      "State Management": "Zustand",
+      "Backend": "Node.js and Express for handling API requests and Azure SQL Database for storing concert and artist data.",
+      "Authentication": "Multi-authentication using Spotify and email, with JWT token for secure user sessions.",
+      "Navigation": "React Navigation using both bottom tab and stack navigation."
+    }
+  },
+  {
+    "id": 3,
+    "title": "MF101 Shop",
+    "description": "Welcome to MF101 Shop, an e-commerce application developed as an assignment for the Siliconmade Academy Course. This app demonstrates core features of an online shopping experience, including product browsing, category filtering, and cart management.",
+    "features": [
+      "Login Functionality: Built using Formik for form handling and Yup for validation.",
+      "Product List: Displays products with details like images, prices, and descriptions.",
+      "Category Filtering: Lists products by selected categories.",
+      "Shopping Cart: Add and view items in the cart.",
+      "Navigation: Bottom tab navigation for seamless user experience."
+    ],
+    "screens": [
+      "assets/screenshots/mf101Shop/1.jpg",
+      "assets/screenshots/mf101Shop/2.jpg",
+      "assets/screenshots/mf101Shop/3.jpg",
+      "assets/screenshots/mf101Shop/4.jpg",
+      "assets/screenshots/mf101Shop/5.jpg",
+      "assets/screenshots/mf101Shop/6.jpg",
+      "assets/screenshots/mf101Shop/7.jpg",
+      "assets/screenshots/mf101Shop/8.jpg"
+    ],
+    "screenTexts": [
+      "Login screen where users can log in using their email and password. Successful login redirects to the bottom tab navigation, and an error message is shown on failure.",
+      "Product List screen accessible from the bottom tab. It displays a list of products fetched from the API, each with essential details.",
+      "Categories screen accessible from the bottom tab. It lists product categories, and clicking on a category filters and displays related products.",
+      "Product Details screen shows detailed information about a selected product, including an 'Add to Cart' button.",
+      "Product Details screen continues with more product images and descriptions, providing complete information about the item.",
+      "The final part of the Product Details screen, showing additional details and options for users to explore.",
+      "Cart screen where users can view all products added to the cart, remove items, and check the total price of the cart contents.",
+      "Cart screen continues with a view of all items in the cart, displaying individual product details and total pricing."
+    ],
+    "technologies": {
+      "Frontend": "React Native",
+      "Forms and Validation": "Formik for form handling, and Yup for validation.",
+      "State Management": "Zustand",
+      "Navigation": "React Navigation for implementing bottom tab navigation.",
+      "Styling": "Custom CSS with dynamic theming for UI."
+    }
+  },
+  {
+    "id": 4,
+    "title": "Pet Adopt App",
+    "description": "Pet Adopt App is a React Native application built using Expo that allows users to browse, add, and adopt pets. The app offers authentication with Clerk, chat messaging, a favorites feature, and seamless navigation using Expo Router. It integrates Firebase Firestore for database management and storage.",
+    "features": [
+      "User Authentication: Users can sign up, log in, and authenticate using Clerk.",
+      "Tab Navigation: Smooth navigation between Home, Favorites, Inbox, Profile sections.",
+      "Pet Management: Add, view, and manage pets in the system.",
+      "Favorites: Users can mark their favorite pets.",
+      "Chat Messaging: Real-time chat between users for pet adoption inquiries.",
+      "Profile Management: Manage user profile and posts."
+    ],
+    "screens": [
+      "assets/screenshots/pet-adoption/01GetStartedScreen.jpg",
+      "assets/screenshots/pet-adoption/02AuthWithGmail.jpg",
+      "assets/screenshots/pet-adoption/03HomeScreen.jpg",
+      "assets/screenshots/pet-adoption/04HomeScreenBirds.jpg",
+      "assets/screenshots/pet-adoption/05HomeScreenCats.jpg",
+      "assets/screenshots/pet-adoption/06PetInfoScreen.jpg",
+      "assets/screenshots/pet-adoption/07PetInfoFavedScreen.jpg",
+      "assets/screenshots/pet-adoption/08FavoritePetsScreen.jpg",
+      "assets/screenshots/pet-adoption/09AddPetScreen.jpg",
+      "assets/screenshots/pet-adoption/10AddPetScreenInputs.jpg",
+      "assets/screenshots/pet-adoption/11InboxScreen.jpg",
+      "assets/screenshots/pet-adoption/12ChatScreen.jpg",
+      "assets/screenshots/pet-adoption/13ProfileScreen.jpg",
+      "assets/screenshots/pet-adoption/14UserPets-Delete.jpg"
+    ],
+    "screenTexts": [
+      "Get Started screen where users are introduced to the app and can proceed to authentication.",
+      "Authentication screen allowing users to log in with their Gmail account through Clerk.",
+      "Home screen where users can browse all available pets for adoption.",
+      "Home screen filtered to display birds available for adoption.",
+      "Home screen filtered to display cats available for adoption.",
+      "Pet Info screen displaying detailed information about the selected pet.",
+      "Pet Info screen with a 'Favorite' button to mark pets as favorites.",
+      "Favorite Pets screen displaying all pets that have been marked as favorites by the user.",
+      "Add Pet screen where users can add new pets for adoption, entering relevant information.",
+      "Add Pet screen with input fields for adding pet details, including name, type, and other attributes.",
+      "Inbox screen where users can view incoming messages and chat with pet owners.",
+      "Chat screen where users can engage in real-time chat for pet adoption inquiries.",
+      "Profile screen allowing users to manage their account details and posted pets.",
+      "User Pets screen where users can delete pets they have listed for adoption."
+    ],
+    "technologies": {
+      "Frontend": "React Native",
+      "Backend": "Firebase Firestore for managing data and storage.",
+      "Authentication": "Clerk for user authentication.",
+      "Navigation": "React Native Expo Router",
+      "State Management": "Zustand",
+      "Chat Messaging": "react-native-gifted-chat.",
+      "Styling": "Custom CSS with dynamic theming for UI."
+    }
+  },
+  {
+    "id": 5,
+    "title": "Simple Order Management System",
+    "description": "This application is designed to help company employees manage customer information and product orders with different user roles and permissions. The system uses a role-based access control mechanism with features such as user management, product and order management, and stock management.",
+    "features": [
+      "Login Page: Secure login page requiring credentials for access.",
+      "Role-based Access: Different roles (Admin, User, Customer Representative) with specific permissions to manage products, customers, and orders.",
+      "Product Management: Admins can manage product listings, including adding new products, updating existing ones, and removing products.",
+      "Customer Management: Admins and Customer Representatives can manage customer details including full name, email, and phone number.",
+      "Order Management: Customer Representatives can create and manage orders, update statuses, and track products.",
+      "Stock Management: Admins can update product stock, confirm availability, and adjust stock levels.",
+      "User Management: Admins can manage user roles, reset passwords, and modify user details.",
+      "System Logs: Track and view logs related to user actions and system activities."
+    ],
+    "screens": [
+      "assets/screenshots/order-management/login.png",
+      "assets/screenshots/order-management/productcolor.png",
+      "assets/screenshots/order-management/productmanagement.png",
+      "assets/screenshots/order-management/productfilter.png",
+      "assets/screenshots/order-management/productadd.png",
+      "assets/screenshots/order-management/productupdate.png",
+      "assets/screenshots/order-management/orderlist.png",
+      "assets/screenshots/order-management/orderadd.png",
+      "assets/screenshots/order-management/orderupdate.png",
+      "assets/screenshots/order-management/customerlist.png",
+      "assets/screenshots/order-management/customerupdate.png",
+      "assets/screenshots/order-management/stocklist.png",
+      "assets/screenshots/order-management/stockconfirm.png",
+      "assets/screenshots/order-management/stockadd.png",
+      "assets/screenshots/order-management/userlist.png",
+      "assets/screenshots/order-management/changepassword.png",
+      "assets/screenshots/order-management/rolepermissions.png",
+      "assets/screenshots/order-management/groupclaims.png"
+    ],
+    "screenTexts": [
+      "Login page where system users can enter credentials to access the platform.",
+      "Product color management form where admins can add or update product color options for each product.",
+      "Product management interface where admins can manage product details, such as size and available colors.",
+      "Product filter screen that allows filtering by category, size, and color to easily navigate through products.",
+      "Form to add new products, including selecting product name, size, color, and other essential details.",
+      "Product Update Form where admins can modify product details, including selecting the product name, size, and color options.",
+      "Order list view where admins and customer representatives can manage and track orders, update their statuses, and delete orders.",
+      "Add order form where customer representatives can create new orders, assigning products, sizes, colors, and quantities to customers.",
+      "Product update form to modify product details, including size and color options.",
+      "Customer list where admins and customer representatives can manage customer information, including full name, email, and address.",
+      "Customer update form where admins can modify customer details, such as contact information and addresses.",
+      "Stock list where admins can manage product stock, including checking stock availability and adjusting quantities.",
+      "Stock confirmation alert box allowing admins to confirm stock availability for products.",
+      "Stock add form where admins can add new stock for products, including product name, size, color, and quantity.",
+      "User management screen where admins can view and manage system users, reset passwords, and assign roles.",
+      "Change password form where admins can update their login credentials.",
+      "Role permissions management screen where admins can assign and modify user permissions for each role (Admin, User, Customer Representative).",
+      "Group claims screen where admins can manage permissions associated with specific user groups, granting access to different system functionalities."
+    ],
+    "technologies": {
+      "Frontend": "Angular for UI development and Bootstrap for responsive layout.",
+      "Backend": ".NET Core for building the multi-layered backend architecture.",
+      "Database": "MS SQL for data storage and Entity Framework Core for database interactions.",
+      "Authentication": "Role-based access control using JWT for secure login sessions.",
+      "Navigation": "Angular Router for efficient navigation across different pages of the application."
+    }
   }
 ]

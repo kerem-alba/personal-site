@@ -435,14 +435,14 @@
 
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                 <div class="portfolio-content h-100">
-                  <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="" />
+                  <img src="assets/screenshots/order-management/login.png" class="img-fluid" alt="" />
                   <div class="portfolio-info">
                     <h4>Product 1</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
                     <a href="portfolio-details.html" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"
                       ><i class="bi bi-zoom-in"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="portfolio-details.html?id=5" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -484,14 +484,14 @@
 
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
-                  <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="" />
+                  <img src="assets/screenshots/konserx/home1.jpg" class="img-fluid" alt="" />
                   <div class="portfolio-info">
-                    <h4>App 2</h4>
+                    <h4>KonserX</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
                     <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"
                       ><i class="bi bi-zoom-in"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="portfolio-details.html?id=2" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -552,14 +552,29 @@
 
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                 <div class="portfolio-content h-100">
-                  <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="" />
+                  <img src="assets/screenshots/mf101Shop/4.jpg" class="img-fluid" alt="" />
                   <div class="portfolio-info">
-                    <h4>App 3</h4>
+                    <h4>Mf101 Shop</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"
+                    <a href="assets/screenshots/mf101Shop/2.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"
                       ><i class="bi bi-zoom-in"></i
                     ></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                    <a href="portfolio-details.html?id=3" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <div class="portfolio-content h-100">
+                  <img src="assets/screenshots/pet-adoption/05HomeScreenCats.jpg" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>pet-adoption</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                    <a href="assets/screenshots/mf101Shop/2.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                    <a href="portfolio-details.html?id=4" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
               </div>
@@ -703,6 +718,54 @@
         </div>
       </section>
       <!-- /Services Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section light-background">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "768": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 20
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 10
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper" id="testimonials-container">
+              <!-- Sertifikalar buraya eklenecek -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Container -->
+      <div id="lightbox" class="lightbox-container">
+        <span id="close-lightbox" class="close-lightbox">&times;</span>
+        <img id="lightbox-img" class="lightbox-img" src="" />
+      </div>
+      <!-- /Testimonials Section -->
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">

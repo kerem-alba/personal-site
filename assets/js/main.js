@@ -7,7 +7,7 @@
  */
 
 (function () {
-  "use strict";
+  ("use strict");
 
   /**
    * Header toggle
@@ -236,6 +236,66 @@
       }
     });
   }
+
+  // JSON dosyasını fetch ile almak
+  fetch("data/certificates.json")
+    .then((response) => response.json())
+    .then((certificates) => {
+      const container = document.getElementById("testimonials-container");
+
+      // Sertifikaları her bir slide olarak eklemek
+      certificates.forEach((cert) => {
+        const slide = document.createElement("div");
+        slide.classList.add("swiper-slide");
+
+        const testimonialItem = document.createElement("div");
+        testimonialItem.classList.add("testimonial-item");
+
+        const testimonialImg = document.createElement("img");
+        testimonialImg.src = cert.img;
+        testimonialImg.classList.add("testimonial-img");
+
+        const testimonialName = document.createElement("h3");
+        testimonialName.textContent = cert.isim;
+
+        // Büyüteç simgesi eklemek
+        const zoomIcon = document.createElement("a");
+        zoomIcon.href = cert.img;
+        zoomIcon.classList.add("preview-link");
+        zoomIcon.innerHTML = '<i class="bi bi-zoom-in"></i>';
+
+        // Lightbox'a tıklanınca gösterilecek resmi hazırlamak
+        zoomIcon.addEventListener("click", function (e) {
+          e.preventDefault(); // Linkin normal davranışını engelle
+          const lightbox = document.getElementById("lightbox");
+          const lightboxImg = document.getElementById("lightbox-img");
+
+          lightboxImg.src = cert.img; // Lightbox'da gösterilecek resmi ayarlıyoruz
+          lightbox.style.display = "flex"; // Lightbox'ı görünür yapıyoruz
+        });
+
+        testimonialItem.appendChild(testimonialImg);
+        testimonialItem.appendChild(testimonialName);
+        testimonialItem.appendChild(zoomIcon); // Büyüteç simgesini ekliyoruz
+        slide.appendChild(testimonialItem);
+
+        container.appendChild(slide);
+      });
+
+      // Swiper'ı yeniden başlatmak
+      new Swiper(".init-swiper", JSON.parse(document.querySelector(".swiper-config").textContent));
+
+      // Lightbox'ı kapatmak için
+      const closeButton = document.getElementById("close-lightbox");
+      closeButton.addEventListener("click", () => {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none"; // Lightbox'ı gizle
+      });
+    })
+    .catch((error) => {
+      console.error("Error loading certificates:", error);
+    });
+
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();
