@@ -156,12 +156,14 @@
 
     let initIsotope;
     imagesLoaded(isotopeItem.querySelector(".isotope-container"), function () {
+      console.log("imagesLoaded çalıştı:", isotopeItem);
       initIsotope = new Isotope(isotopeItem.querySelector(".isotope-container"), {
         itemSelector: ".isotope-item",
         layoutMode: layout,
         filter: filter,
         sortBy: sort,
       });
+      console.log("Isotope oluşturuldu:", initIsotope);
     });
 
     isotopeItem.querySelectorAll(".isotope-filters li").forEach(function (filters) {

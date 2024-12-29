@@ -447,7 +447,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -682,7 +682,7 @@ section,
 # Resume Section
 --------------------------------------------------------------*/
 #resume .section-title {
-  margin-bottom: -80px;
+  margin-bottom: -30px;
 }
 
 .resume .container {
@@ -764,8 +764,8 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-#portfolio .section-title {
-  margin-bottom: -80px;
+.portfolio .section-title {
+  margin-bottom: -10px;
 }
 
 .portfolio .portfolio-filters {
@@ -1160,7 +1160,7 @@ section,
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-details .portfolio-info h3 {
+.portfolio-details .portfolio-description h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1169,9 +1169,10 @@ section,
 }
 
 .portfolio-details .portfolio-info ul {
-  list-style: none;
   padding: 0;
   font-size: 15px;
+  list-style-type: circle;
+  margin-left: 20px;
 }
 
 .portfolio-details .portfolio-info ul li + li {
@@ -1180,8 +1181,9 @@ section,
 
 .portfolio-details .portfolio-description {
   padding: 20px;
-  margin-top: 30px;
   box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1195,20 +1197,37 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.portfolio-technologies {
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-technologies h4 {
+  font-size: 18px;
+}
+
+.portfolio-technologies table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.portfolio-technologies table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.portfolio-technologies table td:first-child {
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
-}
-
-#project-info {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-#project-description {
-  text-align: justify;
 }
 
 .swiper-slide {
@@ -1230,26 +1249,4 @@ section,
   max-width: 100%;
   overflow-y: auto;
   height: calc(30px + 6em);
-}
-
-.portfolio-technologies {
-  margin-top: 30px;
-  padding: 20px;
-
-  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
-}
-.portfolio-technologies table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-.portfolio-technologies table td {
-  text-align: left;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-.portfolio-technologies table td:first-child {
-  font-weight: bold;
 }

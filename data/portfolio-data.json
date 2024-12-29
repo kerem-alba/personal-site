@@ -263,5 +263,94 @@
       "Authentication": "Role-based access control using JWT for secure login sessions.",
       "Navigation": "Angular Router for efficient navigation across different pages of the application."
     }
+  },
+  {
+    "id": 6,
+    "title": "Warehouse Management System",
+    "description": "This project is designed to practice Firestore and Firebase Authentication by developing a simple warehouse management system. Users can register and log in with Firebase, and manage the warehouse inventory with CRUD operations. A dynamic and user-friendly application is built using React, Redux, Firestore, and Tailwind CSS technologies.",
+    "features": [
+      "User registration and login with Firebase Authentication.",
+      "Add, update, delete, and list products in the inventory using Firestore.",
+      "Page navigation with React Router.",
+      "Styling with Tailwind CSS."
+    ],
+    "screens": [
+      "assets/screenshots/warehouse/login.jpg",
+      "assets/screenshots/warehouse/register.jpg",
+      "assets/screenshots/warehouse/homescreen.jpg",
+      "assets/screenshots/warehouse/homescreenadd.jpg",
+      "assets/screenshots/warehouse/homescreenupdate.jpg",
+      "assets/screenshots/warehouse/rejectstock.jpg"
+    ],
+    "screenTexts": [
+      "The screen where users can register and log in using Firebase Authentication.",
+      "The screen where users can register to the system.",
+      "The main screen displaying existing products in the warehouse.",
+      "The screen used to add a new product to the inventory.",
+      "The screen used to update an existing product.",
+      "The screen where stock rejection operations are performed."
+    ],
+    "technologies": {
+      "frontend": "React (with TypeScript)",
+      "stateManagement": "Redux",
+      "backend": "Firestore (for warehouse data and inventory management)",
+      "authentication": "Firebase Authentication",
+      "routing": "React Router",
+      "styling": "Tailwind CSS"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Employee Leave Management System",
+    "description": "This application allows users to manage employee leave requests with ASP.NET Core, Entity Framework, and the Repository Pattern. The system includes authentication, database interactions, and a user-friendly interface.",
+    "features": [
+      "Build a fully data-driven .NET Core MVC application from scratch.",
+      "Implement authentication and authorization functionality using Identity Core.",
+      "Manage employee leave requests with CRUD operations.",
+      "Use AutoMapper and View Models for better data management.",
+      "Implement the Repository and Unit of Work Patterns with Dependency Injection.",
+      "Deploy the application to IIS and Azure Web Services."
+    ],
+    "screens": [
+      "assets/screenshots/employee-leave/login.jpg",
+      "assets/screenshots/employee-leave/register.jpg",
+      "assets/screenshots/employee-leave/resetpassword.jpg",
+      "assets/screenshots/employee-leave/admin-create-leave-type.jpg",
+      "assets/screenshots/employee-leave/admin-leave-types.jpg",
+      "assets/screenshots/employee-leave/admin-employees.jpg",
+      "assets/screenshots/employee-leave/admin-leave-allocations.jpg",
+      "assets/screenshots/employee-leave/admin-leave-requests.jpg",
+      "assets/screenshots/employee-leave/admin-leave-request-details.jpg",
+      "assets/screenshots/employee-leave/admin-leave-request-details-approved.jpg",
+      "assets/screenshots/employee-leave/user-apply-for-leave.jpg",
+      "assets/screenshots/employee-leave/user-apply-for-leave2.jpg",
+      "assets/screenshots/employee-leave/user-my-leave.jpg",
+      "assets/screenshots/employee-leave/user-profile.jpg",
+      "assets/screenshots/employee-leave/user-change-password.jpg"
+    ],
+    "screenTexts": [
+      "Login screen allowing secure user authentication using Identity Core.",
+      "Registration screen allowing new users to create accounts with validation.",
+      "Password reset screen for users to request password recovery.",
+      "Admin screen for creating new leave types to manage employee leave policies.",
+      "Admin screen displaying all leave types with options to edit or delete.",
+      "Admin screen listing all employees with the ability to manage their roles and details.",
+      "Admin screen showing leave allocations for specific employees, allowing updates or deletions.",
+      "Admin screen displaying all leave requests with their statuses and management options.",
+      "Admin screen showing detailed information about a specific leave request.",
+      "Admin screen showing approved leave request details for tracking and management.",
+      "Screen for employees to apply for leave by selecting dates and leave types.",
+      "Another screen where employees can refine leave request details before submission.",
+      "Screen displaying a summary of all leave requests submitted by the employee.",
+      "Profile management screen where users can update their personal details.",
+      "Screen for users to change their account password securely."
+    ],
+    "technologies": {
+      "frontend": "ASP.NET Core MVC with Bootstrap and jQuery",
+      "stateManagement": "Dependency Injection with Repository and Unit of Work Patterns",
+      "backend": "Entity Framework Core with SQL Server",
+      "authentication": "ASP.NET Core Identity",
+      "deployment": "IIS and Azure Web Services"
+    }
   }
 ]

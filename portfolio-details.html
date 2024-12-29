@@ -118,10 +118,14 @@
       <!-- End Page Title -->
 
       <!-- Portfolio Details Section -->
-      <section id="portfolio-details" class="portfolio-details section">
+      <section id="portfolio-details" class="portfolio-details section light-background">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-lg-8">
+              <div class="portfolio-description" data-aos="fade-up" data-aos-delay="100">
+                <h3 id="project-title"></h3>
+                <p id="project-description"></p>
+              </div>
               <div class="portfolio-details-slider swiper init-swiper">
                 <script type="application/json" class="swiper-config">
                   {
@@ -137,7 +141,9 @@
                       "el": ".swiper-pagination",
                       "type": "bullets",
                       "clickable": true
-                    }
+                    },
+                    "observer": true,
+                    "observeParents": true
                   }
                 </script>
                 <div class="swiper-wrapper align-items-center" id="gallery"></div>
@@ -147,13 +153,9 @@
 
             <div class="col-lg-4">
               <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-                <h3 id="project-title"></h3>
                 <ul id="project-info">
                   <!-- Dinamik liste öğeleri buraya eklenecek -->
                 </ul>
-              </div>
-              <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-                <p id="project-description"></p>
               </div>
               <div class="portfolio-technologies" data-aos="fade-up" data-aos-delay="400">
                 <h4>Technologies</h4>

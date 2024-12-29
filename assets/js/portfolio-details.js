@@ -1,7 +1,6 @@
 fetch("data/portfolio-data.json")
   .then((response) => response.json())
   .then((data) => {
-    // URL'den `id` Parametresini Al
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get("id"));
 
@@ -25,7 +24,6 @@ fetch("data/portfolio-data.json")
       const slide = document.createElement("div");
       slide.className = "swiper-slide";
 
-      // Görsel ve Metin Ekle
       // Görsel ve Metin Ekle
       slide.innerHTML = `
         <img src="${screen}" alt="Project Image">
@@ -54,6 +52,12 @@ fetch("data/portfolio-data.json")
       row.appendChild(valueCell);
 
       techTable.appendChild(row);
+    });
+
+    // Pagination'ı elle kaydırmayla senkronize et
+    swiper.on("slideChange", () => {
+      console.log("Slide changed. Current index:", swiper.activeIndex);
+      swiper.pagination.update(); // Pagination'ı güncelle
     });
 
     const skillsIcons = document.querySelector(".skills-icons");
@@ -88,3 +92,29 @@ fetch("data/portfolio-data.json")
     });
   })
   .catch((error) => console.error("Error loading portfolio data:", error));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const swiperConfigElement = document.querySelector(".swiper-config");
+
+  try {
+    let swiperConfig = JSON.parse(swiperConfigElement.textContent);
+
+    const params = new URLSearchParams(window.location.search);
+    const filterType = params.get("filter");
+
+    if (filterType === "web") {
+      swiperConfig.slidesPerView = 1;
+      swiperConfig.slidesPerGroup = 1;
+    }
+
+    swiperConfigElement.textContent = JSON.stringify(swiperConfig);
+
+    new Swiper(".init-swiper", swiperConfig);
+
+    swiper.on("slideChange", () => {
+      swiper.pagination.update();
+    });
+  } catch (error) {
+    console.error("Error parsing or updating swiper config JSON:", error);
+  }
+});
