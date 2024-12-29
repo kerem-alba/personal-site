@@ -480,12 +480,8 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 60vh;
   position: relative;
-  padding: 50px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero img {
@@ -512,13 +508,13 @@ section,
 }
 
 .hero h2 {
-  margin: 0;
+  padding-left: 10px;
   font-size: 64px;
   font-weight: 700;
 }
 
 .hero p {
-  margin: 5px 0 0 0;
+  padding-left: 15px;
   font-size: 26px;
 }
 
@@ -552,6 +548,39 @@ section,
   .hero p {
     font-size: 20px;
   }
+}
+
+/* Hero Section Buttons */
+.hero-buttons {
+  margin-top: 200px;
+}
+
+.hero-buttons .btn {
+  margin: 0 15px;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-buttons .btn-primary {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+}
+
+.hero-buttons .btn-primary:hover {
+  background: var(--accent-color);
+}
+
+.hero-buttons .btn-secondary {
+  background-color: #040b14;
+  color: #fff;
+  border: none;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: #09243d;
 }
 
 /*--------------------------------------------------------------
@@ -656,6 +685,14 @@ section,
 .skill-item p {
   margin-top: 5px;
   font-size: 14px;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 992px) {
@@ -725,6 +762,15 @@ section,
 .resume .resume-item p {
   font-size: 15px;
   font-weight: 400;
+}
+
+.resume .thesis-title {
+  color: #0056b3;
+  font-weight: 500;
+}
+
+.resume .thesis-title:hover {
+  color: var(--accent-color);
 }
 
 .resume .resume-item ul {
@@ -1032,107 +1078,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-wrap {
-  background-color: var(--surface-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-}
-
-@media (max-width: 575px) {
-  .contact .info-wrap {
-    padding: 20px;
-  }
-}
-
-.contact .info-item {
-  margin-bottom: 40px;
-}
-
-.contact .info-item i {
-  font-size: 20px;
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.contact .php-email-form {
-  background-color: var(--surface-color);
-  height: 100%;
-  padding: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
-}
-
-.contact .php-email-form input[type="text"],
-.contact .php-email-form input[type="email"],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type="text"]:focus,
-.contact .php-email-form input[type="email"]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type="text"]::placeholder,
-.contact .php-email-form input[type="email"]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type="submit"] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
-
-/*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
@@ -1226,14 +1171,10 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 .swiper-slide img {

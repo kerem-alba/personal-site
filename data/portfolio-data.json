@@ -308,8 +308,7 @@
       "Implement authentication and authorization functionality using Identity Core.",
       "Manage employee leave requests with CRUD operations.",
       "Use AutoMapper and View Models for better data management.",
-      "Implement the Repository and Unit of Work Patterns with Dependency Injection.",
-      "Deploy the application to IIS and Azure Web Services."
+      "Implement the Repository and Unit of Work Patterns with Dependency Injection."
     ],
     "screens": [
       "assets/screenshots/employee-leave/login.jpg",
@@ -349,8 +348,7 @@
       "frontend": "ASP.NET Core MVC with Bootstrap and jQuery",
       "stateManagement": "Dependency Injection with Repository and Unit of Work Patterns",
       "backend": "Entity Framework Core with SQL Server",
-      "authentication": "ASP.NET Core Identity",
-      "deployment": "IIS and Azure Web Services"
+      "authentication": "ASP.NET Core Identity"
     }
   }
 ]
