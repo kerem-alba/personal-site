@@ -103,8 +103,9 @@
     ],
     "technologies": {
       "Frontend": "React Native (Expo)",
-      "State Management": "Zustand",
       "Backend": "Node.js and Express for handling API requests and Azure SQL Database for storing concert and artist data.",
+      "State Management": "Zustand",
+      "Web Scraping": "Concert data is collected via web scraping using Python and Beautiful Soup, and stored in the Azure SQL Database.",
       "Authentication": "Multi-authentication using Spotify and email, with JWT token for secure user sessions.",
       "Navigation": "React Navigation using both bottom tab and stack navigation."
     }
