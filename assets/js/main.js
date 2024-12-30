@@ -301,3 +301,10 @@
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();
+
+document.querySelector("#btn-primary").addEventListener("click", () => {
+  gtag("event", "download", {
+    event_category: "Button",
+    event_label: "CV Download",
+  });
+});
