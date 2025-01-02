@@ -1,38 +1,38 @@
 [
   {
-    "img": "assets/certificates/1.jpg",
+    "img": "assets/certificates/1.avif",
     "isim": "Siliconmade - Fundamentals of Programming"
   },
   {
-    "img": "assets/certificates/2.jpg",
+    "img": "assets/certificates/2.avif",
     "isim": "Siliconmade - Backend Development"
   },
   {
-    "img": "assets/certificates/3.jpg",
+    "img": "assets/certificates/3.avif",
     "isim": "Siliconmade - Mobile Frontend Development"
   },
   {
-    "img": "assets/certificates/4.jpg",
+    "img": "assets/certificates/4.avif",
     "isim": "Stanford Online - Supervised Machine Learning"
   },
   {
-    "img": "assets/certificates/5.jpg",
+    "img": "assets/certificates/5.avif",
     "isim": "Stanford Online - Advanced Learning Algorithms"
   },
   {
-    "img": "assets/certificates/6.jpg",
+    "img": "assets/certificates/6.avif",
     "isim": "Code.org - Intro to CS"
   },
   {
-    "img": "assets/certificates/7.jpg",
+    "img": "assets/certificates/7.avif",
     "isim": "ICCW - Backend Development"
   },
   {
-    "img": "assets/certificates/8.jpg",
+    "img": "assets/certificates/8.avif",
     "isim": "Arelsem - Backend Development"
   },
   {
-    "img": "assets/certificates/9.jpg",
+    "img": "assets/certificates/9.avif",
     "isim": "Udemy - Asp.net and EF Development"
   }
 ]
