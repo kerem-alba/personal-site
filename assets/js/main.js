@@ -49,9 +49,17 @@
    */
   const preloader = document.querySelector("#preloader");
   if (preloader) {
+    const maxPreloaderTime = 2000;
+
     window.addEventListener("load", () => {
       preloader.remove();
     });
+
+    setTimeout(() => {
+      if (preloader) {
+        preloader.remove();
+      }
+    }, maxPreloaderTime);
   }
 
   /**
