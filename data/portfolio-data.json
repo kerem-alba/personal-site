@@ -351,5 +351,27 @@
       "backend": "Entity Framework Core with SQL Server",
       "authentication": "ASP.NET Core Identity"
     }
+  },
+  {
+    "id": 8,
+    "title": "HENAS - Doktor Nöbet Yönetim Sistemi",
+    "description": "HENAS, doktor nöbetlerini optimize etmek için genetik algoritma kullanan web tabanlı bir uygulamadır. Sistem, tercih günleri, hiyerarşi uyumu ve iş yükü dengesi gibi çeşitli kısıtları dikkate alarak adil ve verimli bir nöbet planlaması sağlar.",
+    "features": [
+      "Genetik algoritma kullanarak optimize edilmiş nöbet çizelgeleri oluşturma.",
+      "Tercih günleri, hiyerarşi uyumu ve iş yükü dengesi gibi karmaşık kısıtları yönetme.",
+      "Doktorlar için çizelgeleri kullanıcı dostu bir arayüzde görselleştirme.",
+      "Oluşturulan çizelgelerde manuel düzenlemelere olanak sağlama.",
+      "Nöbet dağılımıyla ilgili detaylı raporlar ve istatistikler sunma.",
+      "Güvenli giriş ve rol tabanlı erişim kontrolü ile kullanıcı kimlik doğrulama.",
+      "Hastane yöneticilerinin doktorları, kısıtları ve nöbet kurallarını yönetmesine olanak tanıma."
+    ],
+    "screens": ["assets/screenshots/henas/genetic-algo.png"],
+    "screenTexts": ["Genetik algoritma işleyiş şeması"],
+    "technologies": {
+      "frontend": "React",
+      "backend": "ASP.NET Core ile RESTful API",
+      "algorithm": "Python",
+      "database": "PostgreSQL"
+    }
   }
 ]

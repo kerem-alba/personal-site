@@ -54,41 +54,8 @@ fetch("data/portfolio-data.json")
       techTable.appendChild(row);
     });
 
-    // Pagination'ı elle kaydırmayla senkronize et
     swiper.on("slideChange", () => {
-      console.log("Slide changed. Current index:", swiper.activeIndex);
-      swiper.pagination.update(); // Pagination'ı güncelle
-    });
-
-    const skillsIcons = document.querySelector(".skills-icons");
-
-    let isDragging = false;
-    let startX;
-    let scrollLeft;
-
-    skillsIcons.addEventListener("mousedown", (e) => {
-      isDragging = true;
-      skillsIcons.classList.add("dragging");
-      startX = e.pageX - skillsIcons.offsetLeft;
-      scrollLeft = skillsIcons.scrollLeft;
-    });
-
-    skillsIcons.addEventListener("mouseleave", () => {
-      isDragging = false;
-      skillsIcons.classList.remove("dragging");
-    });
-
-    skillsIcons.addEventListener("mouseup", () => {
-      isDragging = false;
-      skillsIcons.classList.remove("dragging");
-    });
-
-    skillsIcons.addEventListener("mousemove", (e) => {
-      if (!isDragging) return;
-      e.preventDefault();
-      const x = e.pageX - skillsIcons.offsetLeft;
-      const walk = (x - startX) * 2; // Hız faktörü
-      skillsIcons.scrollLeft = scrollLeft - walk;
+      swiper.pagination.update();
     });
   })
   .catch((error) => console.error("Error loading portfolio data:", error));
@@ -107,12 +74,16 @@ document.addEventListener("DOMContentLoaded", () => {
       swiperConfig.slidesPerGroup = 1;
     }
 
-    swiperConfigElement.textContent = JSON.stringify(swiperConfig);
-
-    new Swiper(".init-swiper", swiperConfig);
+    const swiper = new Swiper(".init-swiper", swiperConfig);
 
     swiper.on("slideChange", () => {
-      swiper.pagination.update();
+      console.log("Slide changed. Current index:", swiper.activeIndex);
+    });
+
+    swiper.on("touchStart", () => {
+      if (swiper.autoplay) {
+        swiper.autoplay.stop();
+      }
     });
   } catch (error) {
     console.error("Error parsing or updating swiper config JSON:", error);
