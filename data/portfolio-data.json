@@ -354,24 +354,24 @@
   },
   {
     "id": 8,
-    "title": "HENAS - Doktor Nöbet Yönetim Sistemi",
-    "description": "HENAS, doktor nöbetlerini optimize etmek için genetik algoritma kullanan web tabanlı bir uygulamadır. Sistem, tercih günleri, hiyerarşi uyumu ve iş yükü dengesi gibi çeşitli kısıtları dikkate alarak adil ve verimli bir nöbet planlaması sağlar.",
+    "title": "Henas",
+    "description": "Henas is an application designed for hospitals to automatically generate fair and optimized duty schedules for doctors. It minimizes the complexity of duty planning while ensuring a transparent and balanced schedule.\n\nProject Online: \nhttps://henas.vercel.app\n\n🔑 Test Credentials:\n• Username: test\n• Password: test1234",
     "features": [
-      "Genetik algoritma kullanarak optimize edilmiş nöbet çizelgeleri oluşturma.",
-      "Tercih günleri, hiyerarşi uyumu ve iş yükü dengesi gibi karmaşık kısıtları yönetme.",
-      "Doktorlar için çizelgeleri kullanıcı dostu bir arayüzde görselleştirme.",
-      "Oluşturulan çizelgelerde manuel düzenlemelere olanak sağlama.",
-      "Nöbet dağılımıyla ilgili detaylı raporlar ve istatistikler sunma.",
-      "Güvenli giriş ve rol tabanlı erişim kontrolü ile kullanıcı kimlik doğrulama.",
-      "Hastane yöneticilerinin doktorları, kısıtları ve nöbet kurallarını yönetmesine olanak tanıma."
+      "Optimal duty schedule generation based on hard and soft constraints.",
+      "Optimization using Genetic Algorithm and Hill Climbing.",
+      "Detailed duty schedule view for doctors and administrators.",
+      "Customizable duty rules and constraints.",
+      "User authentication with OAuth."
     ],
-    "screens": ["assets/screenshots/henas/genetic-algo.png"],
-    "screenTexts": ["Genetik algoritma işleyiş şeması"],
+    "screens": ["assets/screenshots/henas/HENAS.png"],
+    "screenTexts": [""],
     "technologies": {
-      "frontend": "React",
-      "backend": "ASP.NET Core ile RESTful API",
-      "algorithm": "Python",
-      "database": "PostgreSQL"
+      "frontend": "React Native",
+      "backend": "Flask (Python)",
+      "database": "PostgreSQL",
+      "authentication": "OAuth-based system",
+      "optimization": "Genetic Algorithm & Hill Climbing",
+      "deployment": "Backend deployed on Render, database hosted on Neon, frontend hosted on Vercel"
     }
   }
 ]
