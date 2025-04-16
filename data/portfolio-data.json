@@ -355,7 +355,7 @@
   {
     "id": 8,
     "title": "Henas",
-    "description": "Henas is an application designed for hospitals to automatically generate fair and optimized duty schedules for doctors. It minimizes the complexity of duty planning while ensuring a transparent and balanced schedule.\n\nProject Online: \nhttps://henas.vercel.app\n\n🔑 Test Credentials:\n• Username: test\n• Password: test1234",
+    "description": "Henas is a smart scheduling application that automates the creation of fair and optimized duty rosters for doctors. It minimizes the complexity of traditional shift planning and ensures fair duty distribution through a user-friendly interface.\n\nThe application is available both as a web platform and a desktop version, offering flexibility in different working environments.\n\nCurrently in active use across multiple hospitals, Henas significantly streamlines the scheduling process and saves valuable time.\n\nProject Online:\nhttps://henas.vercel.app\n\n🔑 Test Credentials:\n• Username: test\n• Password: test1234",
     "features": [
       "Optimal duty schedule generation based on hard and soft constraints.",
       "Optimization using Genetic Algorithm and Hill Climbing.",
@@ -372,6 +372,40 @@
       "authentication": "OAuth-based system",
       "optimization": "Genetic Algorithm & Hill Climbing",
       "deployment": "Backend deployed on Render, database hosted on Neon, frontend hosted on Vercel"
+    }
+  },
+  {
+    "id": 9,
+    "title": "FD Test Case Todo App",
+    "description": "This application is a feature-rich Todo app built with .NET and Angular based on the Clean Architecture Solution Template. It includes full support for tag management, color customization, soft deletion, and search functionality.",
+    "features": [
+      "Change background color for each Todo item.",
+      "Add and remove tags to/from Todo items.",
+      "Filter Todo items by tags.",
+      "Show most used tags as UI shortcuts.",
+      "Add text search to filter Todo items.",
+      "Soft delete for Todo items and lists (not shown on UI, not queried, not physically deleted).",
+      "Includes unit test coverage for added features."
+    ],
+    "screens": [
+      "assets/screenshots/todo-list/1.jpg",
+      "assets/screenshots/todo-list/2.jpg",
+      "assets/screenshots/todo-list/3.jpg",
+      "assets/screenshots/todo-list/4.jpg",
+      "assets/screenshots/todo-list/5.jpg"
+    ],
+    "screenTexts": [
+      "Main page showing project description and feature breakdown.",
+      "Todo list view with filterable tags and colored items.",
+      "Item detail modal with background color and tag selection.",
+      "Tag management modal for editing and deleting tags.",
+      "UI showing tag-based filtering and text search applied."
+    ],
+    "technologies": {
+      "frontend": "Angular",
+      "stateManagement": "RxJS",
+      "backend": ".NET Core with Clean Architecture",
+      "authentication": "None (Test scope)"
     }
   }
 ]
