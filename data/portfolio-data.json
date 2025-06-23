@@ -407,5 +407,53 @@
       "backend": ".NET Core with Clean Architecture",
       "authentication": "None (Test scope)"
     }
+  },
+  {
+    "id": 10,
+    "title": "Cloud File Storage",
+    "description": "Cloud File Storage is a secure and modular file storage system that allows users to upload, share, and manage files with detailed permission settings. Built with ASP.NET Core MVC and a microservice backend architecture, it features a user-friendly UI, robust API layer, and role-based file access controls.",
+    "features": [
+      "User registration and login via AuthApi using JWT authentication.",
+      "Upload and store file metadata and physical files by authenticated users.",
+      "File sharing types: Private, Public, and Custom (select users with permission levels).",
+      "Custom sharing stored in FileShares table with editable/read-only options.",
+      "Permission-based UI rendering: owners can edit/share, others view-only.",
+      "CQRS pattern with separate command and query handlers via SMediator.",
+      "Secure token handling via Session and HttpClientFactory in UI.",
+      "Centralized API Gateway for routing frontend requests to microservices."
+    ],
+    "screens": [
+      "assets/screenshots/cloudfilestorage/Login.png",
+      "assets/screenshots/cloudfilestorage/Register.png",
+      "assets/screenshots/cloudfilestorage/Upload1.png",
+      "assets/screenshots/cloudfilestorage/Upload2.png",
+      "assets/screenshots/cloudfilestorage/Home.png",
+      "assets/screenshots/cloudfilestorage/Home2.png",
+      "assets/screenshots/cloudfilestorage/ReadonlyDoc.png",
+      "assets/screenshots/cloudfilestorage/EditDoc.png",
+      "assets/screenshots/cloudfilestorage/SharedWithMe.png"
+    ],
+    "screenTexts": [
+      "Login screen where users authenticate with email and password. Token is stored in session.",
+      "Registration screen to create new user accounts via AuthApi.",
+      "File upload screen with name, description, file select, and share type inputs.",
+      "Custom share mode enables user selection with read/edit permission dropdowns.",
+      "Main dashboard showing owned files with action buttons (download/edit/delete).",
+      "Options menu for each file: download, update metadata, or move to trash.",
+      "Detail screen of a file shared with current user with read-only permission.",
+      "Detail screen of a public editable file with permission-based Edit button.",
+      "Screen showing files shared with the user by others, with permission type."
+    ],
+    "technologies": {
+      "frontend": "ASP.NET Core MVC (Razor Views) with Bootstrap",
+      "backend": "Microservices with ASP.NET Core Web API (AuthApi & FileMetadataApi)",
+      "common": "Shared logic in CloudFileStorage.Common (DTOs, Constants, Extensions)",
+      "gateway": "API Gateway using YARP or Ocelot for routing and central entry point",
+      "database": "PostgreSQL via Entity Framework Core 9.0",
+      "architecture": "CQRS with SMediator",
+      "authentication": "JWT-based auth, tokens stored in Session",
+      "logging": "Serilog",
+      "http": "HttpClientFactory for token-authenticated API requests"
+    }
   }
 ]
